@@ -57,7 +57,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 17;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消"; //Cancel
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -102,7 +102,7 @@
             this.MinimumSize = new System.Drawing.Size(310, 230);
             this.Name = "ChooseComparisonsDialog";
             this.Padding = new System.Windows.Forms.Padding(7);
-            this.Text = "Choose Comparisons";
+            this.Text = "选择对比项";
             this.Load += new System.EventHandler(this.ChooseComparisonsDialog_Load);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);

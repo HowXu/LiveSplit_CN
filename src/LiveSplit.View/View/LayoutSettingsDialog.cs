@@ -22,7 +22,7 @@ public partial class LayoutSettingsDialog : Form
         Layout = layout;
         ComponentSettings = [];
         Components = [];
-        AddNewTab("Layout", new LayoutSettingsControl(settings, layout));
+        AddNewTab("布局", new LayoutSettingsControl(settings, layout));
         AddComponents(tabComponent);
     }
 

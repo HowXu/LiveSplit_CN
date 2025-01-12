@@ -8,7 +8,7 @@ namespace LiveSplit.Model.Comparisons;
 public class LatestRunComparisonGenerator : IComparisonGenerator
 {
     public IRun Run { get; set; }
-    public const string ComparisonName = "Latest Run";
+    public const string ComparisonName = "上一次速通"; //Latest Run
     public const string ShortComparisonName = "Latest";
     public string Name => ComparisonName;
 

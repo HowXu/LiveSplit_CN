@@ -12,6 +12,9 @@ namespace LiveSplit.Web.SRL;
 
 public class SpeedRunsLiveAPI : RaceProviderAPI
 {
+
+    // 访问speedrunlive的api 然而国内访问极慢 这个过程会大大减慢计时器加载过程 这里直接跳过FromURL的过程全部返回为空数组
+
     protected static readonly SpeedRunsLiveAPI _Instance = new();
 
     public static SpeedRunsLiveAPI Instance => _Instance;
@@ -32,7 +35,7 @@ public class SpeedRunsLiveAPI : RaceProviderAPI
     {
         gameList ??= (IEnumerable<dynamic>)JSON.FromUri(GetUri("games")).games;
 
-        return gameList;
+        return []; //gameList
     }
 
     public IEnumerable<string> GetGameNames()
@@ -57,7 +60,7 @@ public class SpeedRunsLiveAPI : RaceProviderAPI
             return new string[0];
         }
 
-        return ((IEnumerable<dynamic>)JSON.FromUri(GetUri("goals/" + gameID + "?season=0")).goals).Select(x => (string)x.name);
+        return [];//((IEnumerable<dynamic>)JSON.FromUri(GetUri("goals/" + gameID + "?season=0")).goals).Select(x => (string)x.name);
     }
 
     public string GetGameIDFromName(string name)
@@ -116,12 +119,13 @@ public class SpeedRunsLiveAPI : RaceProviderAPI
     public void RefreshRacesList()
     {
         List<SRLRaceInfo> infoList = [];
+        List<SRLRaceInfo> empty = [];
         foreach (dynamic race in JSON.FromUri(GetUri("races")).races)
         {
             infoList.Add(new SRLRaceInfo(race));
         }
 
-        racesList = infoList;
+        racesList = empty; //infoList
         RacesRefreshedCallback?.Invoke(this);
     }
 

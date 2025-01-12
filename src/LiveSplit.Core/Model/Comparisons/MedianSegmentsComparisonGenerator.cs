@@ -11,7 +11,7 @@ namespace LiveSplit.Model.Comparisons;
 public class MedianSegmentsComparisonGenerator : IComparisonGenerator
 {
     public IRun Run { get; set; }
-    public const string ComparisonName = "Median Segments"; //you win glacials
+    public const string ComparisonName = "平均分段"; //you win glacials //Median Segments
     public const string ShortComparisonName = "Median";
     public const double Weight = 0.75;
 

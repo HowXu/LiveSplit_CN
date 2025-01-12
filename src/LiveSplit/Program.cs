@@ -45,6 +45,7 @@ internal static class Program
         catch (Exception e)
         {
             Options.Log.Error(e);
+            // 报错提示 不予汉化
             MessageBox.Show(string.Format("LiveSplit has crashed due to the following reason:\n\n{0}", e.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 #endif

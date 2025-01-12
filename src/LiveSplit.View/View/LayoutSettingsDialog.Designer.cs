@@ -45,7 +45,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 17;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消"; //Cancel
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -99,7 +99,7 @@
             this.MinimumSize = new System.Drawing.Size(520, 674);
             this.Name = "LayoutSettingsDialog";
             this.Padding = new System.Windows.Forms.Padding(7);
-            this.Text = "Layout Settings";
+            this.Text = "布局设置"; //Layout Settings
             this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 

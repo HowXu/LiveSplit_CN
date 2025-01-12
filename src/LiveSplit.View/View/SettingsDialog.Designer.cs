@@ -133,7 +133,7 @@
             this.btnChooseRaceProvider.Name = "btnChooseRaceProvider";
             this.btnChooseRaceProvider.Size = new System.Drawing.Size(190, 23);
             this.btnChooseRaceProvider.TabIndex = 6;
-            this.btnChooseRaceProvider.Text = "Manage Racing Services...";
+            this.btnChooseRaceProvider.Text = "管理速通服务项:"; //Manage Racing Services...
             this.btnChooseRaceProvider.UseVisualStyleBackColor = true;
             this.btnChooseRaceProvider.Click += new System.EventHandler(this.btnChooseRaceProvider_Click);
             // 
@@ -157,7 +157,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(178, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Saved Accounts:";
+            this.label5.Text = "已保存的账户:"; //Saved Accounts:
             // 
             // btnLogOut
             // 
@@ -167,7 +167,7 @@
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(190, 23);
             this.btnLogOut.TabIndex = 8;
-            this.btnLogOut.Text = "Log Out of All Accounts";
+            this.btnLogOut.Text = "从所有账号登出"; //Log Out of All Accounts
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
@@ -181,7 +181,7 @@
             this.groupBox1.Size = new System.Drawing.Size(374, 421);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Hotkeys";
+            this.groupBox1.Text = "热键"; //Hotkeys
             // 
             // tableLayoutPanel2
             // 
@@ -243,7 +243,7 @@
             this.chkDeactivateForOtherPrograms.Name = "chkDeactivateForOtherPrograms";
             this.chkDeactivateForOtherPrograms.Size = new System.Drawing.Size(172, 23);
             this.chkDeactivateForOtherPrograms.TabIndex = 10;
-            this.chkDeactivateForOtherPrograms.Text = "Deactivate For Other Programs";
+            this.chkDeactivateForOtherPrograms.Text = "取消与其他程序冲突"; //Deactivate For Other Programs
             this.chkDeactivateForOtherPrograms.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -254,7 +254,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Start / Split:";
+            this.label1.Text = "启动 / 分段:"; //Start / Split:
             // 
             // chkGlobalHotkeys
             // 
@@ -266,7 +266,7 @@
             this.chkGlobalHotkeys.Name = "chkGlobalHotkeys";
             this.chkGlobalHotkeys.Size = new System.Drawing.Size(98, 23);
             this.chkGlobalHotkeys.TabIndex = 9;
-            this.chkGlobalHotkeys.Text = "Global Hotkeys";
+            this.chkGlobalHotkeys.Text = "全局热键:"; //Global Hotkeys
             this.chkGlobalHotkeys.UseVisualStyleBackColor = true;
             this.chkGlobalHotkeys.CheckedChanged += new System.EventHandler(this.chkGlobalHotkeys_CheckedChanged);
             // 
@@ -279,7 +279,7 @@
             this.chkDoubleTap.Name = "chkDoubleTap";
             this.chkDoubleTap.Size = new System.Drawing.Size(168, 17);
             this.chkDoubleTap.TabIndex = 11;
-            this.chkDoubleTap.Text = "Double Tap Prevention";
+            this.chkDoubleTap.Text = "阻止双Tap"; //Double Tap Prevention
             this.chkDoubleTap.UseVisualStyleBackColor = true;
             // 
             // txtStartSplit
@@ -301,7 +301,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Reset:";
+            this.label2.Text = "重置:"; //Reset
             // 
             // label6
             // 
@@ -311,7 +311,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(172, 13);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Pause:";
+            this.label6.Text = "暂停:"; //Pause
             // 
             // txtReset
             // 
@@ -343,7 +343,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Skip Split:";
+            this.label3.Text = "跳过分段:"; //Skip Split:
             // 
             // label4
             // 
@@ -353,7 +353,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Undo Split:";
+            this.label4.Text = "撤销分段:"; //Undo Split:
             // 
             // txtSkip
             // 
@@ -385,7 +385,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(172, 13);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Toggle Global Hotkeys:";
+            this.label7.Text = "切换全局热键:"; //Toggle Global Hotkeys:
             // 
             // txtToggle
             // 
@@ -406,7 +406,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(172, 13);
             this.label8.TabIndex = 10;
-            this.label8.Text = "Switch Comparison (Previous):";
+            this.label8.Text = "选择先前的对比项:"; //Switch Comparison (Previous):
             // 
             // label9
             // 
@@ -416,7 +416,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 13);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Switch Comparison (Next):";
+            this.label9.Text = "选择下一个对比项:"; //Switch Comparison (Next):
             // 
             // txtSwitchPrevious
             // 
@@ -448,7 +448,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(128, 13);
             this.label10.TabIndex = 14;
-            this.label10.Text = "Hotkey Delay (Seconds):";
+            this.label10.Text = "热键延迟(秒):"; //Hotkey Delay (Seconds):
             // 
             // txtDelay
             // 
@@ -469,7 +469,7 @@
             this.grpHotkeyProfiles.Size = new System.Drawing.Size(362, 77);
             this.grpHotkeyProfiles.TabIndex = 13;
             this.grpHotkeyProfiles.TabStop = false;
-            this.grpHotkeyProfiles.Text = "Hotkey Profiles";
+            this.grpHotkeyProfiles.Text = "热键配置"; //Hotkey Profiles
             // 
             // tableLayoutPanel3
             // 
@@ -500,7 +500,7 @@
             this.lblProfile.Name = "lblProfile";
             this.lblProfile.Size = new System.Drawing.Size(166, 13);
             this.lblProfile.TabIndex = 0;
-            this.lblProfile.Text = "Active Hotkey Profile:";
+            this.lblProfile.Text = "使用该热键配置:"; //Active Hotkey Profile:
             // 
             // cmbHotkeyProfiles
             // 
@@ -521,7 +521,7 @@
             this.btnRemoveProfile.Name = "btnRemoveProfile";
             this.btnRemoveProfile.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveProfile.TabIndex = 3;
-            this.btnRemoveProfile.Text = "Remove";
+            this.btnRemoveProfile.Text = "移除"; //Remove
             this.btnRemoveProfile.UseVisualStyleBackColor = true;
             this.btnRemoveProfile.Click += new System.EventHandler(this.btnRemoveProfile_Click);
             // 
@@ -532,7 +532,7 @@
             this.btnRenameProfile.Name = "btnRenameProfile";
             this.btnRenameProfile.Size = new System.Drawing.Size(75, 23);
             this.btnRenameProfile.TabIndex = 2;
-            this.btnRenameProfile.Text = "Rename";
+            this.btnRenameProfile.Text = "重命名"; //Rename
             this.btnRenameProfile.UseVisualStyleBackColor = true;
             this.btnRenameProfile.Click += new System.EventHandler(this.btnRenameProfile_Click);
             // 
@@ -544,7 +544,7 @@
             this.btnNewProfile.Name = "btnNewProfile";
             this.btnNewProfile.Size = new System.Drawing.Size(75, 23);
             this.btnNewProfile.TabIndex = 1;
-            this.btnNewProfile.Text = "New";
+            this.btnNewProfile.Text = "新建"; //New
             this.btnNewProfile.UseVisualStyleBackColor = true;
             this.btnNewProfile.Click += new System.EventHandler(this.btnNewProfile_Click);
             // 
@@ -557,7 +557,7 @@
             this.chkAllowGamepads.Name = "chkAllowGamepads";
             this.chkAllowGamepads.Size = new System.Drawing.Size(168, 17);
             this.chkAllowGamepads.TabIndex = 15;
-            this.chkAllowGamepads.Text = "Allow Gamepads as Hotkeys";
+            this.chkAllowGamepads.Text = "允许手柄热键"; //Allow Gamepads as Hotkeys
             this.chkAllowGamepads.UseVisualStyleBackColor = true;
             // 
             // btnCancel
@@ -570,7 +570,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 1;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消"; //Cancel
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -598,7 +598,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(178, 13);
             this.label11.TabIndex = 15;
-            this.label11.Text = "Race Viewer:";
+            this.label11.Text = "速通推流平台:"; //Race Viewer:
             // 
             // label12
             // 
@@ -608,7 +608,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(178, 13);
             this.label12.TabIndex = 17;
-            this.label12.Text = "Active Comparisons:";
+            this.label12.Text = "激活的对比项"; //Active Comparisons:
             // 
             // label13
             // 
@@ -618,7 +618,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(178, 13);
             this.label13.TabIndex = 18;
-            this.label13.Text = "Racing Services:";
+            this.label13.Text = "速通服务项:"; //Racing Services:
             // 
             // btnChooseComparisons
             // 
@@ -628,7 +628,7 @@
             this.btnChooseComparisons.Name = "btnChooseComparisons";
             this.btnChooseComparisons.Size = new System.Drawing.Size(190, 23);
             this.btnChooseComparisons.TabIndex = 7;
-            this.btnChooseComparisons.Text = "Choose Active Comparisons...";
+            this.btnChooseComparisons.Text = "选择激活的对比项"; //Choose Active Comparisons...
             this.btnChooseComparisons.UseVisualStyleBackColor = true;
             this.btnChooseComparisons.Click += new System.EventHandler(this.btnChooseComparisons_Click);
             // 
@@ -641,7 +641,7 @@
             this.chkSimpleSOB.Name = "chkSimpleSOB";
             this.chkSimpleSOB.Size = new System.Drawing.Size(174, 17);
             this.chkSimpleSOB.TabIndex = 3;
-            this.chkSimpleSOB.Text = "Simple Sum of Best Calculation";
+            this.chkSimpleSOB.Text = "简化最佳成绩求和"; //Simple Sum of Best Calculation
             this.chkSimpleSOB.UseVisualStyleBackColor = true;
             this.chkSimpleSOB.CheckedChanged += new System.EventHandler(this.chkSimpleSOB_CheckedChanged);
             // 
@@ -655,7 +655,7 @@
             this.chkWarnOnReset.Name = "chkWarnOnReset";
             this.chkWarnOnReset.Size = new System.Drawing.Size(186, 17);
             this.chkWarnOnReset.TabIndex = 4;
-            this.chkWarnOnReset.Text = "Warn On Reset If Better Times";
+            this.chkWarnOnReset.Text = "重置更好成绩时警告"; //Warn On Reset If Better Times
             this.chkWarnOnReset.UseVisualStyleBackColor = true;
             // 
             // panelRefreshRate
@@ -686,7 +686,7 @@
             this.labelRefreshRate.Name = "labelRefreshRate";
             this.labelRefreshRate.Size = new System.Drawing.Size(93, 13);
             this.labelRefreshRate.TabIndex = 19;
-            this.labelRefreshRate.Text = "Refresh Rate (Hz):";
+            this.labelRefreshRate.Text = "刷新频率(Hz):"; //Refresh Rate (Hz):
             // 
             // panelPort
             // 
@@ -719,7 +719,7 @@
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(63, 13);
             this.lblPort.TabIndex = 0;
-            this.lblPort.Text = "Server Port:";
+            this.lblPort.Text = "端口:"; //Server Port:
             // 
             // SettingsDialog
             // 

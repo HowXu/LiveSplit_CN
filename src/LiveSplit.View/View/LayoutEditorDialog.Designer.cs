@@ -161,7 +161,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消"; //Cancel
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -185,7 +185,7 @@
             this.btnLayoutSettings.Name = "btnLayoutSettings";
             this.btnLayoutSettings.Size = new System.Drawing.Size(88, 23);
             this.btnLayoutSettings.TabIndex = 5;
-            this.btnLayoutSettings.Text = "Layout Settings";
+            this.btnLayoutSettings.Text = "布局设置"; //Layout Settings
             this.btnLayoutSettings.UseVisualStyleBackColor = true;
             this.btnLayoutSettings.Click += new System.EventHandler(this.btnLayoutSettings_Click);
             // 
@@ -213,7 +213,7 @@
             this.rdoHorizontal.Size = new System.Drawing.Size(72, 17);
             this.rdoHorizontal.TabIndex = 7;
             this.rdoHorizontal.TabStop = true;
-            this.rdoHorizontal.Text = "Horizontal";
+            this.rdoHorizontal.Text = "水平"; //Horizontal
             this.rdoHorizontal.UseVisualStyleBackColor = true;
             // 
             // rdoVertical
@@ -225,7 +225,7 @@
             this.rdoVertical.Name = "rdoVertical";
             this.rdoVertical.Size = new System.Drawing.Size(68, 17);
             this.rdoVertical.TabIndex = 8;
-            this.rdoVertical.Text = "Vertical";
+            this.rdoVertical.Text = "纵向"; //Vertica
             this.rdoVertical.UseVisualStyleBackColor = true;
             // 
             // btnSetSize
@@ -236,7 +236,7 @@
             this.btnSetSize.Name = "btnSetSize";
             this.btnSetSize.Size = new System.Drawing.Size(75, 23);
             this.btnSetSize.TabIndex = 6;
-            this.btnSetSize.Text = "Set Size";
+            this.btnSetSize.Text = "设置尺寸"; //Set Size
             this.btnSetSize.UseVisualStyleBackColor = true;
             this.btnSetSize.Click += new System.EventHandler(this.btnSetSize_Click);
             // 
@@ -255,7 +255,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(560, 306);
             this.Name = "LayoutEditorDialog";
-            this.Text = "Layout Editor";
+            this.Text = "布局编辑"; //Layout Editor
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

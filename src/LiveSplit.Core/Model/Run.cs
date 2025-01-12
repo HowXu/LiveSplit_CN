@@ -21,7 +21,7 @@ public class Run : IRun, INotifyPropertyChanged
     /// <summary>
     /// The name of the comparison used to save your Personal Best splits.
     /// </summary>
-    public const string PersonalBestComparisonName = "Personal Best";
+    public const string PersonalBestComparisonName = "个人最佳"; //Personal Best
 
     /// <summary>
     /// This is the internal list being used to save the segments, which the run is a facade to.

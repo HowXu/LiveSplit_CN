@@ -6,7 +6,7 @@ public class NoneComparisonGenerator : IComparisonGenerator
 {
     public IRun Run { get; set; }
 
-    public const string ComparisonName = "None";
+    public const string ComparisonName = "无"; //None
     public string Name => ComparisonName;
 
     public NoneComparisonGenerator(IRun run)

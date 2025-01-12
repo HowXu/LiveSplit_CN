@@ -296,12 +296,12 @@ public partial class MetadataControl : UserControl
         if (string.IsNullOrEmpty(Metadata.RunID))
         {
             btnSubmit.Enabled = true;
-            btnAssociate.Text = "Associate with Speedrun.com...";
+            btnAssociate.Text = "关联Speedrun.com账号"; //Associate with Speedrun.com...
         }
         else
         {
             btnSubmit.Enabled = false;
-            btnAssociate.Text = "Show on Speedrun.com...";
+            btnAssociate.Text = "在Speedrun.com上查看"; //Show on Speedrun.com...
         }
     }
 

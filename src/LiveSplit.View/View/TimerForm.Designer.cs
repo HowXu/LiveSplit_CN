@@ -95,34 +95,34 @@
             // 
             this.editSplitsMenuItem.Name = "editSplitsMenuItem";
             this.editSplitsMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.editSplitsMenuItem.Text = "Edit Splits...";
+            this.editSplitsMenuItem.Text = "编辑计时项..."; //Edit Splits...
             this.editSplitsMenuItem.Click += new System.EventHandler(this.editSplitsMenuItem_Click);
             // 
             // openSplitsMenuItem
             // 
             this.openSplitsMenuItem.Name = "openSplitsMenuItem";
             this.openSplitsMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.openSplitsMenuItem.Text = "Open Splits";
+            this.openSplitsMenuItem.Text = "打开预设计时"; //Open Splits
             // 
             // saveSplitsMenuItem
             // 
             this.saveSplitsMenuItem.Name = "saveSplitsMenuItem";
             this.saveSplitsMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.saveSplitsMenuItem.Text = "Save Splits";
+            this.saveSplitsMenuItem.Text = "保存当前计时"; //Save Splits
             this.saveSplitsMenuItem.Click += new System.EventHandler(this.saveSplitsMenuItem_Click);
             // 
             // saveSplitsAsMenuItem
             // 
             this.saveSplitsAsMenuItem.Name = "saveSplitsAsMenuItem";
             this.saveSplitsAsMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.saveSplitsAsMenuItem.Text = "Save Splits As...";
+            this.saveSplitsAsMenuItem.Text = "另存当前计时为..."; //Save Splits As ...
             this.saveSplitsAsMenuItem.Click += new System.EventHandler(this.saveAsMenuItem_Click);
             // 
             // closeSplitsMenuItem
             // 
             this.closeSplitsMenuItem.Name = "closeSplitsMenuItem";
             this.closeSplitsMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.closeSplitsMenuItem.Text = "Close Splits";
+            this.closeSplitsMenuItem.Text = "关闭计时项"; //Close Splits
             this.closeSplitsMenuItem.Click += new System.EventHandler(this.closeSplitsMenuItem_Click);
             // 
             // toolStripSeparator5
@@ -134,7 +134,7 @@
             // 
             this.controlMenuItem.Name = "controlMenuItem";
             this.controlMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.controlMenuItem.Text = "Control";
+            this.controlMenuItem.Text = "控制"; //Control
             // 
             // toolStripSeparator1
             // 
@@ -145,7 +145,7 @@
             // 
             this.shareMenuItem.Name = "shareMenuItem";
             this.shareMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.shareMenuItem.Text = "Share...";
+            this.shareMenuItem.Text = "分享..."; //Share...
             this.shareMenuItem.Click += new System.EventHandler(this.shareMenuItem_Click);
             // 
             // endRaceSection
@@ -157,27 +157,27 @@
             // 
             this.editLayoutMenuItem.Name = "editLayoutMenuItem";
             this.editLayoutMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.editLayoutMenuItem.Text = "Edit Layout...";
+            this.editLayoutMenuItem.Text = "编辑布局..."; //Edit Layout...
             this.editLayoutMenuItem.Click += new System.EventHandler(this.editLayoutMenuItem_Click);
             // 
             // openLayoutMenuItem
             // 
             this.openLayoutMenuItem.Name = "openLayoutMenuItem";
             this.openLayoutMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.openLayoutMenuItem.Text = "Open Layout";
+            this.openLayoutMenuItem.Text = "打开预设布局"; //Open Layout
             // 
             // saveLayoutMenuItem
             // 
             this.saveLayoutMenuItem.Name = "saveLayoutMenuItem";
             this.saveLayoutMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.saveLayoutMenuItem.Text = "Save Layout";
+            this.saveLayoutMenuItem.Text = "保存当前布局"; //Save Layout
             this.saveLayoutMenuItem.Click += new System.EventHandler(this.saveLayoutMenuItem_Click);
             // 
             // saveLayoutAsMenuItem
             // 
             this.saveLayoutAsMenuItem.Name = "saveLayoutAsMenuItem";
             this.saveLayoutAsMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.saveLayoutAsMenuItem.Text = "Save Layout As...";
+            this.saveLayoutAsMenuItem.Text = "另存当前布局为..."; //Save Layout As...
             this.saveLayoutAsMenuItem.Click += new System.EventHandler(this.saveLayoutAsMenuItem_Click);
             // 
             // toolStripSeparator2
@@ -189,7 +189,7 @@
             // 
             this.settingsMenuItem.Name = "settingsMenuItem";
             this.settingsMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.settingsMenuItem.Text = "Settings";
+            this.settingsMenuItem.Text = "设置"; //Settings
             this.settingsMenuItem.Click += new System.EventHandler(this.settingsMenuItem_Click);
             // 
             // toolStripSeparator4
@@ -201,21 +201,21 @@
             // 
             this.aboutMenuItem.Name = "aboutMenuItem";
             this.aboutMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.aboutMenuItem.Text = "About";
+            this.aboutMenuItem.Text = "关于"; //About
             this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
             this.exitMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.exitMenuItem.Text = "Exit";
+            this.exitMenuItem.Text = "退出"; //Exit
             this.exitMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // splitMenuItem
             // 
             this.splitMenuItem.Name = "splitMenuItem";
             this.splitMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.splitMenuItem.Text = "Start";
+            this.splitMenuItem.Text = "开始"; //Start
             this.splitMenuItem.Click += new System.EventHandler(this.splitMenuItem_Click);
             // 
             // resetMenuItem
@@ -223,7 +223,7 @@
             this.resetMenuItem.Enabled = false;
             this.resetMenuItem.Name = "resetMenuItem";
             this.resetMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.resetMenuItem.Text = "Reset";
+            this.resetMenuItem.Text = "重置"; //Reset
             this.resetMenuItem.Click += new System.EventHandler(this.resetMenuItem_Click);
             // 
             // undoSplitMenuItem
@@ -231,7 +231,7 @@
             this.undoSplitMenuItem.Enabled = false;
             this.undoSplitMenuItem.Name = "undoSplitMenuItem";
             this.undoSplitMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undoSplitMenuItem.Text = "Undo Split";
+            this.undoSplitMenuItem.Text = "退回上一个计时项"; //Undo Split
             this.undoSplitMenuItem.Click += new System.EventHandler(this.undoSplitMenuItem_Click);
             // 
             // skipSplitMenuItem
@@ -239,7 +239,7 @@
             this.skipSplitMenuItem.Enabled = false;
             this.skipSplitMenuItem.Name = "skipSplitMenuItem";
             this.skipSplitMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.skipSplitMenuItem.Text = "Skip Split";
+            this.skipSplitMenuItem.Text = "跳过当前计时项"; //Skip Split
             this.skipSplitMenuItem.Click += new System.EventHandler(this.skipSplitMenuItem_Click);
             // 
             // pauseMenuItem
@@ -247,7 +247,7 @@
             this.pauseMenuItem.Enabled = false;
             this.pauseMenuItem.Name = "pauseMenuItem";
             this.pauseMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pauseMenuItem.Text = "Pause";
+            this.pauseMenuItem.Text = "暂停"; //Pause
             this.pauseMenuItem.Click += new System.EventHandler(this.pauseMenuItem_Click);
             // 
             // undoPausesMenuItem
@@ -255,7 +255,7 @@
             this.undoPausesMenuItem.Enabled = false;
             this.undoPausesMenuItem.Name = "undoPausesMenuItem";
             this.undoPausesMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undoPausesMenuItem.Text = "Undo All Pauses";
+            this.undoPausesMenuItem.Text = "撤销所有暂停"; //Undo All Pauses
             this.undoPausesMenuItem.Click += new System.EventHandler(this.undoPausesMenuItem_Click);
             // 
             // hotkeysMenuItem
@@ -263,27 +263,27 @@
             this.hotkeysMenuItem.Enabled = true;
             this.hotkeysMenuItem.Name = "hotkeysMenuItem";
             this.hotkeysMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.hotkeysMenuItem.Text = "Global Hotkeys";
+            this.hotkeysMenuItem.Text = "全局热键"; //Global Hotkeys
             this.hotkeysMenuItem.Click += new System.EventHandler(this.hotkeysMenuItem_Click);
             // 
             // comparisonMenuItem
             // 
             this.comparisonMenuItem.Name = "comparisonMenuItem";
             this.comparisonMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.comparisonMenuItem.Text = "Compare Against";
+            this.comparisonMenuItem.Text = "设置对比项"; //Compare Against
             //
             // serverMenuItem
             //
             this.serverMenuItem.Name = "serverMenuItem";
             this.serverMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.serverMenuItem.Text = "Start TCP Server";
+            this.serverMenuItem.Text = "启动TCP服务器"; //Start TCP Server
             this.serverMenuItem.Click += new System.EventHandler(this.ServerMenuItem_Click);
             //
             // webSocketMenuItem
             //
             this.webSocketMenuItem.Name = "webSocketMenuItem";
             this.webSocketMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.webSocketMenuItem.Text = "Start WebSocket Server";
+            this.webSocketMenuItem.Text = "启动WebSocket服务器"; //Start WebSocket Server
             this.webSocketMenuItem.Click += new System.EventHandler(this.WebSocketMenuItem_Click);
             // 
             // TimerForm

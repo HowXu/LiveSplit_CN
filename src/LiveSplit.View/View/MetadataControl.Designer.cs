@@ -91,7 +91,7 @@
             this.lblRegion.Name = "lblRegion";
             this.lblRegion.Size = new System.Drawing.Size(97, 13);
             this.lblRegion.TabIndex = 0;
-            this.lblRegion.Text = "Region:";
+            this.lblRegion.Text = "地区:"; //Region
             // 
             // lblPlatform
             // 
@@ -101,7 +101,7 @@
             this.lblPlatform.Name = "lblPlatform";
             this.lblPlatform.Size = new System.Drawing.Size(106, 13);
             this.lblPlatform.TabIndex = 1;
-            this.lblPlatform.Text = "Platform:";
+            this.lblPlatform.Text = "平台:"; //Platform
             // 
             // cmbRegion
             // 
@@ -122,7 +122,7 @@
             this.lblRules.Name = "lblRules";
             this.lblRules.Size = new System.Drawing.Size(97, 13);
             this.lblRules.TabIndex = 4;
-            this.lblRules.Text = "Rules:";
+            this.lblRules.Text = "规则:"; //Rules:
             // 
             // btnAssociate
             // 
@@ -135,7 +135,7 @@
             this.btnAssociate.Name = "btnAssociate";
             this.btnAssociate.Size = new System.Drawing.Size(166, 23);
             this.btnAssociate.TabIndex = 6;
-            this.btnAssociate.Text = "Associate with Speedrun.com...";
+            this.btnAssociate.Text = "关联Speedrun.com账号"; //Associate with Speedrun.com...
             this.btnAssociate.UseVisualStyleBackColor = true;
             this.btnAssociate.Click += new System.EventHandler(this.btnAssociate_Click);
             // 
@@ -162,7 +162,7 @@
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(81, 23);
             this.btnSubmit.TabIndex = 8;
-            this.btnSubmit.Text = "Submit Run...";
+            this.btnSubmit.Text = "提交速通成绩"; //Submit Run...
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 

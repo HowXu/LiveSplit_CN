@@ -178,7 +178,7 @@ public partial class RunEditorDialog : Form
         var iconColumn = new DataGridViewImageColumn
         {
             ImageLayout = DataGridViewImageCellLayout.Zoom,
-            Name = "Icon",
+            Name = "图标", //Icon
             Width = 50,
             AutoSizeMode = DataGridViewAutoSizeColumnMode.None
         };
@@ -187,7 +187,7 @@ public partial class RunEditorDialog : Form
 
         var column = new DataGridViewTextBoxColumn
         {
-            Name = "Segment Name",
+            Name = "分段名", //Segment Name
             MinimumWidth = 120,
             SortMode = DataGridViewColumnSortMode.NotSortable
         };
@@ -195,7 +195,7 @@ public partial class RunEditorDialog : Form
 
         column = new DataGridViewTextBoxColumn
         {
-            Name = "Split Time",
+            Name = "计时分割时间", //Split Time
             Width = 100,
             AutoSizeMode = DataGridViewAutoSizeColumnMode.None
         };
@@ -205,7 +205,7 @@ public partial class RunEditorDialog : Form
 
         column = new DataGridViewTextBoxColumn
         {
-            Name = "Segment Time",
+            Name = "分段所用时间", //Segment Time
             Width = 100,
             AutoSizeMode = DataGridViewAutoSizeColumnMode.None
         };
@@ -215,7 +215,7 @@ public partial class RunEditorDialog : Form
 
         column = new DataGridViewTextBoxColumn
         {
-            Name = "Best Segment",
+            Name = "最佳成绩", //Best Segment
             Width = 100,
             AutoSizeMode = DataGridViewAutoSizeColumnMode.None
         };
@@ -838,7 +838,7 @@ public partial class RunEditorDialog : Form
 
     private void FillCbxLayoutToUseItems()
     {
-        cbxLayoutToUse.Items.Add(Tuple.Create("Default Layout", "?default"));
+        cbxLayoutToUse.Items.Add(Tuple.Create("默认布局", "?default")); //Default Layout
         var range = CurrentState.Settings.RecentLayouts
             .Reverse()
             .Where(e => !string.IsNullOrEmpty(e))
@@ -1581,7 +1581,9 @@ public partial class RunEditorDialog : Form
     private void btnAddComparison_Click(object sender, EventArgs e)
     {
         string name = "";
-        DialogResult result = InputBox.Show("New Comparison", "Comparison Name:", ref name);
+        //New Comparison
+        //Comparison Name:
+        DialogResult result = InputBox.Show("新比较", "比较名:", ref name);
         if (result == DialogResult.OK)
         {
             if (!Run.Comparisons.Contains(name))
@@ -1636,11 +1638,11 @@ public partial class RunEditorDialog : Form
     protected void RefreshAutoSplittingUI()
     {
         lblDescription.Text = Run.AutoSplitter == null
-            ? "There is no Auto Splitter available for this game."
+            ? "没有适配该游戏的自动计时器" //There is no Auto Splitter available for this game.
             : Run.AutoSplitter.Description;
         btnActivate.Text = Run.IsAutoSplitterActive()
-            ? "Deactivate"
-            : "Activate";
+            ? "取消挂载" //Deactivate
+            : "挂载"; //Activate
         btnActivate.Enabled = Run.AutoSplitter != null;
         btnSettings.Enabled = Run.IsAutoSplitterActive() && Run.AutoSplitter.Component.GetSettingsControl(LayoutMode.Vertical) != null;
         btnWebsite.Visible = Run.AutoSplitter != null && Run.AutoSplitter.Website != null;

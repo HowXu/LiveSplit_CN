@@ -339,6 +339,7 @@ public partial class TimerForm : Form
             return;
         }
 
+        // 这里是判断Race Provider和右键菜单的关系 然后添加Race Provider
         int menuItemIndex = RightClickMenu.Items.IndexOf(shareMenuItem);
         int firstRaceProvider = menuItemIndex + 1;
         int lastRaceProvider = RightClickMenu.Items.IndexOfKey("endRaceSection") - 1;
@@ -365,7 +366,7 @@ public partial class TimerForm : Form
             var raceProviderItem = new ToolStripMenuItem()
             {
                 Name = $"{raceProvider.ProviderName}racesMenuItem",
-                Text = $"{raceProvider.ProviderName} Races",
+                Text = $"{raceProvider.ProviderName} 比赛", //Races
                 Tag = raceProvider
             };
             raceProviderItem.MouseHover += racingMenuItem_MouseHover;
@@ -712,14 +713,14 @@ public partial class TimerForm : Form
             Server.StopWs();
             serverMenuItem.Enabled = true;
 
-            this.InvokeIfRequired(() => webSocketMenuItem.Text = "Start WebSocket Server");
+            this.InvokeIfRequired(() => webSocketMenuItem.Text = "启动WebSocket服务器"); //Start WebSocket Server
         }
         else
         {
             Server.StartWs();
             serverMenuItem.Enabled = false;
 
-            this.InvokeIfRequired(() => webSocketMenuItem.Text = "Stop WebSocket Server");
+            this.InvokeIfRequired(() => webSocketMenuItem.Text = "停止WebSocket服务器"); //Stop WebSocket Server
         }
 
         WebSocketStarted = !WebSocketStarted;
@@ -941,17 +942,17 @@ public partial class TimerForm : Form
             openSplitsMenuItem.DropDownItems.Add(new ToolStripSeparator());
         }
 
-        var openFromFileMenuItem = new ToolStripMenuItem("From File...");
+        var openFromFileMenuItem = new ToolStripMenuItem("从文件打开..."); //From File...
         openFromFileMenuItem.Click += openSplitsFromFileMenuItem_Click;
         openSplitsMenuItem.DropDownItems.Add(openFromFileMenuItem);
-        var openFromURLMenuItem = new ToolStripMenuItem("From URL...");
+        var openFromURLMenuItem = new ToolStripMenuItem("从URL打开..."); //From URL...
         openFromURLMenuItem.Click += openSplitsFromURLMenuItem_Click;
         openSplitsMenuItem.DropDownItems.Add(openFromURLMenuItem);
-        var openFromSpeedrunComMenuItem = new ToolStripMenuItem("From Speedrun.com...");
+        var openFromSpeedrunComMenuItem = new ToolStripMenuItem("从Speedrun.com打开..."); //From Speedrun.com... 
         openFromSpeedrunComMenuItem.Click += openFromSpeedrunComMenuItem_Click;
         openSplitsMenuItem.DropDownItems.Add(openFromSpeedrunComMenuItem);
         openSplitsMenuItem.DropDownItems.Add(new ToolStripSeparator());
-        var editSplitHistoryMenuItem = new ToolStripMenuItem("Edit History");
+        var editSplitHistoryMenuItem = new ToolStripMenuItem("编辑历史项"); //Edit History
         editSplitHistoryMenuItem.Click += editSplitHistoryMenuItem_Click;
         openSplitsMenuItem.DropDownItems.Add(editSplitHistoryMenuItem);
     }
@@ -1019,17 +1020,17 @@ public partial class TimerForm : Form
             openLayoutMenuItem.DropDownItems.Add(new ToolStripSeparator());
         }
 
-        var openLayoutFromFileMenuItem = new ToolStripMenuItem("From File...");
+        var openLayoutFromFileMenuItem = new ToolStripMenuItem("从文件打开..."); //From File...
         openLayoutFromFileMenuItem.Click += openLayoutFromFileMenuItem_Click;
         openLayoutMenuItem.DropDownItems.Add(openLayoutFromFileMenuItem);
-        var openFromURLMenuItem = new ToolStripMenuItem("From URL...");
+        var openFromURLMenuItem = new ToolStripMenuItem("从URL打开..."); //From URL...
         openFromURLMenuItem.Click += openLayoutFromURLMenuItem_Click;
         openLayoutMenuItem.DropDownItems.Add(openFromURLMenuItem);
-        var defaultLayoutMenuItem = new ToolStripMenuItem("Default");
+        var defaultLayoutMenuItem = new ToolStripMenuItem("默认"); //Default
         defaultLayoutMenuItem.Click += (x, y) => LoadDefaultLayout();
         openLayoutMenuItem.DropDownItems.Add(defaultLayoutMenuItem);
         openLayoutMenuItem.DropDownItems.Add(new ToolStripSeparator());
-        var editLayoutHistoryMenuItem = new ToolStripMenuItem("Edit History");
+        var editLayoutHistoryMenuItem = new ToolStripMenuItem("编辑历史项"); //Edit History
         editLayoutHistoryMenuItem.Click += editLayoutHistoryMenuItem_Click;
         openLayoutMenuItem.DropDownItems.Add(editLayoutHistoryMenuItem);
     }
@@ -2051,7 +2052,9 @@ public partial class TimerForm : Form
             || CurrentState.CurrentPhase == TimerPhase.Paused))
         {
             DontRedraw = true;
-            result = MessageBox.Show(this, "This run did not beat your current splits. Would you like to save this run as a Personal Best?", "Save as Personal Best?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            //This run did not beat your current splits. Would you like to save this run as a Personal Best?
+            //Save as Personal Best?
+            result = MessageBox.Show(this, "此次速通超过以往成绩. 你想把这次速通保存为个人最佳成绩吗?", "保存为个人最佳?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
             DontRedraw = false;
             if (result == DialogResult.Yes)
             {
@@ -3032,12 +3035,12 @@ public partial class TimerForm : Form
 
         comparisonMenuItem.DropDownItems.Add(new ToolStripSeparator());
 
-        var realTimeMenuItem = new ToolStripMenuItem("Real Time");
+        var realTimeMenuItem = new ToolStripMenuItem("实际时间"); //Real Time
         realTimeMenuItem.Click += realTimeMenuItem_Click;
         realTimeMenuItem.Name = "RealTime";
         comparisonMenuItem.DropDownItems.Add(realTimeMenuItem);
 
-        var gameTimeMenuItem = new ToolStripMenuItem("Game Time");
+        var gameTimeMenuItem = new ToolStripMenuItem("游戏时间"); //Game Time
         gameTimeMenuItem.Click += gameTimeMenuItem_Click;
         gameTimeMenuItem.Name = "GameTime";
         comparisonMenuItem.DropDownItems.Add(gameTimeMenuItem);

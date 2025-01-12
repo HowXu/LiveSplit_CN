@@ -74,7 +74,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Width:";
+            this.label1.Text = "宽:"; //Width
             // 
             // label2
             // 
@@ -84,7 +84,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Height:";
+            this.label2.Text = "高:"; //Height
             // 
             // nmWidth
             // 
@@ -144,7 +144,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消"; //Cancel
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -170,20 +170,20 @@
             this.chkKeepAspectRatio.Name = "chkKeepAspectRatio";
             this.chkKeepAspectRatio.Size = new System.Drawing.Size(206, 17);
             this.chkKeepAspectRatio.TabIndex = 6;
-            this.chkKeepAspectRatio.Text = "Keep Aspect Ratio";
+            this.chkKeepAspectRatio.Text = "保持长宽比"; //Keep Aspect Ratio
             this.chkKeepAspectRatio.UseVisualStyleBackColor = true;
             // 
             // SetSizeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(230, 155);
+            this.ClientSize = new System.Drawing.Size(300, 155);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SetSizeForm";
             this.Padding = new System.Windows.Forms.Padding(7);
-            this.Text = "Set Layout Size";
+            this.Text = "布局尺寸"; //Set Layout Size
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmWidth)).EndInit();

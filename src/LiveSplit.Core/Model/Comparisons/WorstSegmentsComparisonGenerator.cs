@@ -7,7 +7,7 @@ namespace LiveSplit.Model.Comparisons;
 public class WorstSegmentsComparisonGenerator : IComparisonGenerator
 {
     public IRun Run { get; set; }
-    public const string ComparisonName = "Worst Segments";
+    public const string ComparisonName = "最差分段"; //Worst Segments
     public const string ShortComparisonName = "Worst";
     public string Name => ComparisonName;
 

@@ -90,7 +90,7 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(267, 17);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "LiveSplit";
+            this.labelProductName.Text = "LiveSplit 汉化 by github.com/HowXu";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBoxDescription
@@ -228,7 +228,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "About LiveSplit";
+            this.Text = "关于 LiveSplit";
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.donateButton)).EndInit();

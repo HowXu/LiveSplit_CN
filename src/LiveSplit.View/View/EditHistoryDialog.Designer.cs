@@ -58,7 +58,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 17;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消"; //Cancel
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -100,7 +100,7 @@
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(120, 23);
             this.btnRemove.TabIndex = 19;
-            this.btnRemove.Text = "Remove Selected";
+            this.btnRemove.Text = "移除选中"; //Remove Selected
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
@@ -116,7 +116,7 @@
             this.MinimumSize = new System.Drawing.Size(300, 258);
             this.Name = "EditHistoryDialog";
             this.Padding = new System.Windows.Forms.Padding(7);
-            this.Text = "Edit History";
+            this.Text = "编辑历史项"; //Edit History
             this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 

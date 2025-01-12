@@ -147,7 +147,7 @@ public partial class LayoutEditorDialog : Form
         }
 
         menuAddComponents.Items.Add(new ToolStripSeparator());
-        var downloadMore = new ToolStripMenuItem("Download More...");
+        var downloadMore = new ToolStripMenuItem("下载更多..."); //Download More...
         downloadMore.Click += (s, e) => Process.Start("http://livesplit.org/components/");
 
         menuAddComponents.Items.Add(downloadMore);
