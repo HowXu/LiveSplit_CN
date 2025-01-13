@@ -16,6 +16,10 @@
 
 LiveSplit会在启动时自动连接SpeedRunLive和racegame.gg的API(国内无法访问)，会大大降低启动速度，这里做了修改直接跳过这个过程。
 
+其次，LiveSplit获取autoSpliters.xml文件直接走的原生github连接，我这里用jsdelivar的镜像代替，做到几乎秒开。
+
+需要注意，LiveSplit还是会利用Speedruncom模块(见lib/SpeedrunComSharp)来获取游戏名的json文件，这个过程跳过不了而且没有代理，不过文件体积较小。
+
 # 修改文件记录
 
 ## 汉化相关
@@ -52,6 +56,8 @@ LiveSplit.View\View\LayoutSettingsDialog.cs
 ```bash
 LiveSplit.Core\Web\SRL\SpeedRunsLiveAPI.cs
 LiveSplit.Racetime\src\LiveSplit.Racetime\RacetimeAPI.cs
+
+LiveSplit.Core\Model\AutoSplitterFactory.cs
 ```
 
 ## 组件相关

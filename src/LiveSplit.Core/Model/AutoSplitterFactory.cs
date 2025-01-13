@@ -14,7 +14,7 @@ public class AutoSplitterFactory
     public static AutoSplitterFactory Instance { get; protected set; }
     public IDictionary<string, AutoSplitter> AutoSplitters { get; set; }
 
-    public const string AutoSplittersXmlUrl = "https://raw.githubusercontent.com/LiveSplit/LiveSplit.AutoSplitters/master/LiveSplit.AutoSplitters.xml";
+    public const string AutoSplittersXmlUrl = "https://fastly.jsdelivr.net/gh/LiveSplit/LiveSplit.AutoSplitters@master/LiveSplit.AutoSplitters.xml"; //https://raw.githubusercontent.com/LiveSplit/LiveSplit.AutoSplitters/master/LiveSplit.AutoSplitters.xml";
     public const string AutoSplittersXmlFile = "LiveSplit.AutoSplitters.xml";
 
     static AutoSplitterFactory()
